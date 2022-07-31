@@ -1,0 +1,259 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 70px;
+}
+
+body {
+    background-color: #bbb;
+}
+
+a {
+    text-decoration: none;
+}
+
+#top-placeholder {
+    height: 70px;
+}
+
+#top {
+    position: fixed;
+    height: 70px;
+    z-index: 9999;
+}
+
+#middle {
+    position: relative;
+}
+
+#bottom {
+    height: 70px;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    padding: 0 2.5% 0 2.5%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+
+/* top styles */
+.nav-top {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 15px;
+    padding: 0 15px 0 15px;
+}
+
+.nav-top#logo {
+    width: 40px;
+    padding: 0;
+}
+
+
+/*****
+* h1: navigator font
+* h2: sidebar font
+* h3: passage title font
+* h4: section font
+* h5: subsection font
+* h6: outline font
+*****/
+h1 {
+    font-size: 20px;
+    font-family: georgia;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: georgia;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: georgia;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: georgia;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 16px;
+    font-family: georgia;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    font-family: georgia;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+a:link h1, a:visited h1 {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover h1, a:active h1 {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover div, a:active div {
+    background-color: #ccc;
+}
+
+
+/* middle styles */
+/* grid systems */
+@media (max-width: 767px) {
+    .invisible-xs {display: none;}
+    .col-xs-1 {width: 8.33%}
+    .col-xs-2 {width: 16.66%}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%}
+    .col-xs-5 {width: 41.66%}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%}
+    .col-xs-8 {width: 66.66%}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%}
+    .col-xs-11 {width: 91.66%}
+    .col-xs-12 {width: 100%;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .invisible-sm {display: none;}
+    .col-sm-1 {width: 8.33%}
+    .col-sm-2 {width: 16.66%}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%}
+    .col-sm-5 {width: 41.66%}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%}
+    .col-sm-8 {width: 66.66%}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%}
+    .col-sm-11 {width: 91.66%}
+    .col-sm-12 {width: 100%;}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .invisible-md {display: none;}
+    .col-md-1 {width: 8.33%}
+    .col-md-2 {width: 16.66%}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%}
+    .col-md-5 {width: 41.66%}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%}
+    .col-md-8 {width: 66.66%}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%}
+    .col-md-11 {width: 91.66%}
+    .col-md-12 {width: 100%;}
+}
+
+@media (min-width: 1200px) {
+    .invisible-lg {display: none;}
+    .col-lg-1 {width: 8.33%}
+    .col-lg-2 {width: 16.66%}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%}
+    .col-lg-5 {width: 41.66%}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%}
+    .col-lg-8 {width: 66.66%}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%}
+    .col-lg-11 {width: 91.66%}
+    .col-lg-12 {width: 100%;}
+}
+
+#sidebar-placeholder {
+    height: 100px;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 23.75%;
+    padding: 15px 15px 5px 15px;
+    border-radius: 15px;
+}
+
+#content {
+    padding: 27px 15px 15px 15px;
+}
+
+#outline-placeholder {
+    /* to be determined */
+}
+
+#outline {
+    position: fixed;
+    width: 23.75%;
+    height: 300px;
+}
+
+.passage {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+a:link h2, a:visited h2 {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover h2, a:active h2 {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+
+/* testing background-colors */
+.c0 { background-color: #000;}
+.c1 { background-color: #111;}
+.c2 { background-color: #222;}
+.c3 { background-color: #333;}
+.c4 { background-color: #444;}
+.c5 { background-color: #555;}
+.c6 { background-color: #666;}
+.c7 { background-color: #777;}
+.c8 { background-color: #888;}
+.c9 { background-color: #999;}
+.ca { background-color: #aaa;}
+.cb { background-color: #bbb;}
+.cc { background-color: #ccc;}
+.cd { background-color: #ddd;}
+.ce { background-color: #eee;}
+.cf { background-color: #fff;}
