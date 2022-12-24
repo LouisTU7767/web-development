@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Mathematics 2</title>
+
+    <!-- <link href="../css/prototype.css" rel="stylesheet" type="text/css"> -->
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/passage.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script> <!-- MathsJax script for displaying mathematics -->
+</head>
+
+<body>
+    <div id="top-placeholder">
+    <div id="top" class="container ca">
+        <!-- buttons on navigator -->
+        <a href="prototype.html"><div id="logo" class="nav-top left cb">
+            <!-- logo image as background -->
+        </div></a>
+
+        <a href="prototype.html"><div id="home" class="nav-top left invisible-xs">
+            <h1>Home</h1>
+        </div></a>
+        <a href=""><div id="maths" class="nav-top left invisible-xs">
+            <h1>Maths</h1>
+        </div></a>
+        <a href=""><div id="algorithms" class="nav-top left invisible-xs">
+            <h1>Algorithms</h1>
+        </div></a>
+
+        <a href=""><div id="language" class="nav-top right invisible-xs">
+            <h1>中文</h1>
+        </div></a>
+
+        <a href="prototype.html"><div id="site-name" class="nav-top left invisible-sm invisible-md invisible-lg">
+            <h1><i>MC Archive</i></h1>
+        </div></a>
+        <a href="#"><div id="menu-icon" class="nav-top right cb invisible-sm invisible-md invisible-lg">
+            <!-- menu icon image as background -->
+        </div></a>
+    </div> <!-- end of top -->
+    </div>
+
+    <!-- collapsable menu for extra small screens -->
+    <div id="_menu" class="container cb invisible-sm invisible-md invisible-lg">
+        <a href="https://www.bing.com/?FORM=Z9FD1"><div id="_home" class="nav-sub cb">
+            <h1>Home</h1>
+        </div></a>
+        <a href="https://www.bing.com/?FORM=Z9FD1"><div id="_maths" class="nav-sub cc">
+            <h1>Maths</h1>
+        </div></a>
+        <a href="https://www.bing.com/?FORM=Z9FD1"><div id="_algorithms" class="nav-sub cb">
+            <h1>Algorithms</h1>
+        </div></a>
+        <a href="https://www.bing.com/?FORM=Z9FD1"><div id="_language" class="nav-sub cc">
+            <h1>中文</h1>
+        </div></a>
+    </div> <!-- end of collapsable menu -->
+
+    <div id="middle" class="container">
+        <div id="sidebar-placeholder" class="invisible-xs invisible-sm col-md-3 col-lg-3 left">
+        <div id="sidebar" class="cc">
+            <a href=""><div class="passage">
+                <h2>Edexcel IAL Pure Mathematics 1</h2>
+            </div></a>
+            <a href=""><div class="passage">
+                <h2>Edexcel IAL Pure Mathematics 2</h2>
+            </div></a>
+            <a href=""><div class="passage">
+                <h2>Edexcel IAL Pure Mathematics 3</h2>
+            </div></a>
+            <a href=""><div class="passage">
+                <h2>Edexcel IAL Pure Mathematics 4</h2>
+            </div></a>
+        </div> <!-- end of sidebar -->
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-9 col-md-6 col-lg-6 left cd">
+            <h3>Pearson Edexcel International A Level Pure Mathematics 2</h3>
+
+            <a name="c1"><h4>Chapter 1 Algebraic methods</h4></a>
+                <a name="s1_1"><h5>1.1 Algebraic fractions</h5></a>
+                <p>You can simplify algebraic fractions using division.</p>
+                <ul>
+                    <li><p>When simplifying an algebraic fraction, where possible factorise the numerator and denominator and then cancel common factors.</p></li>
+                </ul>
+
+                <a name="s1_2"><h5>1.2 Dividing polynomials</h5></a>
+                <p>A polynomial is a finite expression with positive whole number indices.</p>
+                <ul>
+                    <li><p>You can use long division to divide a polynomial by \( (x \pm p) \), where \( p \) is a constant.</p></li>
+                    <li><p>You can use long division to divide a polynomial by \( (a x \pm b) \), where \( a \) and \( b \) are constants.</p></li>
+                </ul>
+                <!-- <p>
+                    \( \begin{array}{lr}
+                          & x^{2} + 5 x\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
+                    x - 3 & \overline{) x^{3} + 2 x^{2} - 17 x + 6} \\
+                          & \underline{x^{3} - 3 x^{2}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
+                          & 5 x^{2} - 17 x\ \ \ \ \ \ \ \ \\
+                          & \underline{5 x^{2} - 15 x}\ \ \ \ \ \ \ \\
+                          & -2 x + 6
+                    \end{array} \)
+                </p> -->
+                <!-- from: https://blog.csdn.net/u011863024/article/details/126314222 -->
+
+                <a name="s1_3"><h5>1.3 The factor theorem</h5></a>
+                <p>The factor theorem is a quick way of finding simple linear factors of a polynomial.</p>
+                <ul>
+                    <li><p>The factor theorem states that if \( f(x) \) is a polynomial then: </p></li>
+                    <ul>
+                        <li><p>If \( f(p) = 0 \), then \( (x - p) \) is a factor of \( f(x) \).</p></li>
+                        <li><p>If \( (x - p) \) is a factor of \( f(x) \), then \( f(p) = 0 \).</p></li>
+                        <li><p>If \( f(\frac{b}{a}) = 0 \), then \( (a x - b) \) is a factor of \( f(x) \).</p></li>
+                        <li><p>If \( (a x - b) \) is a factor of \( f(x) \), then \( f(\frac{b}{a}) = 0 \).</p></li>
+                    </ul>
+                </ul>
+                <p>You can use the factor theorem to quickly factorise a cubic function, \( g(x) \): </p>
+                <ul>
+                    <li><p>Substitute values into the function until you find a value \( p \) such that \( g(p) = 0 \).</p></li>
+                    <li><p>Divide the function by \( (x - p) \).</p></li>
+                    <li><p>Write \( g(x) = (x - p) (a x^{2} + b x + c) \)</p></li>
+                    <li><p>Factorise the quadratic factor, if possible, to write \( g(x) \) as a product of three linear factors.</p></li>
+                </ul>
+
+                <a name="s1_4"><h5>1.4 The remainder theorem</h5></a>
+                <ul>
+                    <li><p>You can find the remainder when a polynomial is divided by \( (a x \pm b) \) by using the remainder theorem.</p></li>
+                    <li><p>If a polynomial \( f(x) \) is divided by \( (a x - b) \) then the remainder is \( f(\frac{b}{a}) \).</p></li>
+                </ul>
+
+                <a name="s1_5"><h5>1.5 Mathematical proof</h5></a>
+                <p>A proof is a logical and structured argument to show that a mathematical statement (or conjecture) is always true. A mathematical proof usually starts with previously established mathematical facts (or theorems) and then works through a series of logical steps. The final step in a proof is a statement of what has been proven.</p>
+                <p>A mathematical proof needs to show that something is true in every case.</p>
+                <ul>
+                    <li><p>You can prove a mathematical statement is true by deduction. This means starting from known facts or definitions, then using logical steps to reach the desired conclusion.</p></li>
+                    <li>
+                        <p>In a mathematical proof you must </p>
+                        <ul>
+                            <li><p>State any information or assumptions you are using</p></li>
+                            <li><p>Show every step of your proof clearly</p></li>
+                            <li><p>Make sure that every step follows logically from the previous step</p></li>
+                            <li><p>Make sure you have covered all possible cases</p></li>
+                            <li><p>Write a statement of proof at the end of your working</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>To prove an identity you should </p>
+                        <ul>
+                            <li><p>Start with the expression on one side of the identity</p></li>
+                            <li><p>Manipulate that expression algebraically until it matches the other side</p></li>
+                            <li><p>Show every step of your algebraic working</p></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a name="s1_6"><h5>1.6 Methods of proof</h5></a>
+                <ul>
+                    <li><p>You can prove a mathematical statement is true by exhaustion. This means breaking the statement into smaller cases and proving each case separately.</p></li>
+                </ul>
+                <p>This method is better suited to a small number of results. You cannot use one example to prove a statement is true, as one example is only one case.</p>
+                <ul>
+                    <li><p>You can prove a mathematical statement is not true by a counter-example. A counter-example is an example that does not work for the statement. You do not need to give more than one, as one is sufficient to disprove a statement.</p></li>
+                </ul>
+
+            <a name="c2"><h4>Chapter 2 Coordinate geometry in the \( \boldsymbol{(x, y)} \) plane</h4></a>
+                <a name="s2_1"><h5>2.1 Midpoints and perpendicular bisectors</h5></a>
+                <p>A line segment is a finite part of a straight line with two distinct endpoints.</p>
+                <p>You can find the midpoint of a line segment by averaging the \( x \)- and \( y \)-coordinates of its endpoints.</p>
+                <ul>
+                    <li><p>The midpoint of a line segment with endpoints \( (x_{1}, y_{1}) \) and \( (x_{2}, y_{2}) \) is \( (\frac{x_{1} + x_{2}}{2}, \frac{y_{1} + y_{2}}{2}) \).</p></li>
+                    <li><p>The perpendicular bisector of a line segment \( A B \) is the straight line that is perpendicular to \( A B \) and passes through the midpoint of \( A B \).</p></li>
+                </ul>
+
+                <a name="s2_2"><h5>2.2 Equation of a circle</h5></a>
+                <p>A circle is the set of points that are equidistant from a fixed point.</p>
+                <ul>
+                    <li><p>The equation of a circle with centre \( (0, 0) \) and radius \( r \) is \( x^{2} + y^{2} = r^{2} \).</p></li>
+                    <li><p>The equation of the circle with centre \( (a, b) \) and radius r is \( (x - a)^{2} + (y - b)^{2} = r^{2} \).</p></li>
+                </ul>
+                <p>If you need to find the centre and radius of a circle with an equation given in expanded form it is usually safest to complete the square for the \( x \) and \( y \) terms.</p>
+
+                <a name="s2_3"><h5>2.3 Intersections of straight lines and circles</h5></a>
+                <p>You can use algebra to find the coordinates of intersection of a straight line and a circle.</p>
+                <ul>
+                    <li><p>A straight line can intersect a circle once, by just touching the circle, or twice. Not all straight lines will intersect a given circle.</p></li>
+                </ul>
+
+                <a name="s2_4"><h5>2.4 Use tangent and chord properties</h5></a>
+                <p>You can use the properties of tangents and chords within circles to solve geometric problems. A tangent to a circle is a straight line that intersects the circle at only one point.</p>
+                <ul>
+                    <li>A tangent to a circle is perpendicular to the radius of the circle at the point of intersection.</li>
+                </ul>
+                <p>A chord is a line segment that joins two points on the circumference of a circle.</p>
+                <ul>
+                    <li><p>The perpendicular bisector of a chord will go through the centre of a circle.</p></li>
+                </ul>
+
+                <a name="s2_5"><h5>2.5 Circles and triangles</h5></a>
+                <p>A triangle consists of three points, called vertices. It is always possible to draw a unique circle through the three vertices of any triangle. This circle is called the circumcircle of the triangle. The centre of the circle is called the circumcentre of the triangle and is the point where the perpendicular bisectors of each side intersect.</p>
+                <p>For a right-angled triangle, the hypotenuse of the triangle is a diameter of the circumcircle.</p>
+                <p>You can state this result in two other ways: </p>
+                <ul>
+                    <li><p>If \( \angle P R Q = 90^{\circ} \) then \( R \) lies on the circle with diameter \( P Q \).</p></li>
+                    <li><p>The angle in a semicircle is always a right angle.</p></li>
+                </ul>
+                <p>To find the centre of a circle given any three points on the circumference: </p>
+                <ul>
+                    <li><p>Find the equations of the perpendicular bisectors of two different chords.</p></li>
+                    <li><p>Find the coordinates of the point of intersection of the perpendicular bisectors.</p></li>
+                </ul>
+
+            <a name="c3"><h4>Chapter 3 Exponentials and logarithms</h4></a>
+                <a name="s3_1"><h5>3.1 Exponential functions</h5></a>
+                <p>Functions of the form \( f(x) = a^{x} \), where \( a \) is a constant, are called exponential functions. You should become familiar with these functions and the shapes of their graphs.</p>
+
+                <a name="s3_2"><h5>3.2 Logarithms</h5></a>
+                <p>The inverses of exponential functions are called logarithms. A relationship which is expressed using an exponent can also be written in terms of logarithms.</p>
+                <ul>
+                    <li><p>\( \log_{a} n = x \) is equivalent to \( a^{x} = n \qquad (a \neq 1) \)</p></li>
+                </ul>
+
+                <a name="s3_3"><h5>3.3 Laws of logarithms</h5></a>
+                <p>Expressions involving more than one logarithm can often be rearranged or simplified. For instance: </p>
+                <p>\( \log_{a} x = m \) and \( \log_{a} y = n \)</p>
+                <p>\( x = a^{m} \) and \( y = a^{n} \)</p>
+                <p>\( x y = a^{m} \times a^{n} = a^{m + n} \)</p>
+                <p>\( \log_{a} x y = m + n = \log_{a} x + \log_{a} y \)</p>
+                <p>This result is one of the laws of logarithms.</p>
+                <ul>
+                    <li><p>The laws of logarithms: </p></li>
+                    <ul>
+                        <li><p>\( \log_{a} x + \log_{a} y = \log_{a} x y \)</p></li>
+                        <li><p>\( \log_{a} x - \log_{a} y = \log_{a} (\frac{x}{y}) \)</p></li>
+                        <li><p>\( \log_{a} (x^{k}) = k \log_{a} x \)</p></li>
+                    </ul>
+                    <li><p>You should also learn to recognise the following special cases: </p></li>
+                    <ul>
+                        <li><p>\( \log_{a} (\frac{1}{x}) = \log_{a} (x^{-1}) = -\log_{a} x \)</p></li>
+                        <li><p>\( \log_{a} a = 1 \qquad (a > 0, a \neq 1) \)</p></li>
+                        <li><p>\( \log_{a} 1 = 0 \qquad (a > 0, a \neq 1) \)</p></li>
+                    </ul>
+                </ul>
+
+                <a name="s3_4"><h5>3.4 Solving equations using logarithms</h5></a>
+                <p>You can use logarithms to solve equations of the form \( a^{x} = b \).</p>
+                <p>You can solve more complicated equations by 'taking logs' of both sides.</p>
+                <ul>
+                    <li><p>Whenever \( f(x) = g(x) \), \( \log_{a} f(x) = \log_{a} g(x) \)</p></li>
+                </ul>
+
+                <a name="s3_5"><h5>3.5 Changing the base of a logarithm</h5></a>
+                <p>
+                    \( \begin{alignat*}{2}
+                        & \text{Working in base } a \text{, suppose that:} \quad &
+                            \log_{a} x & = m \\
+                        & \text{Writing this as a power:} \quad &
+                            a^{m} & = x \\
+                        & \text{Taking logs to a different base } b \text{:} \quad &
+                            \log_{b} a^{m} & = \log_{b} x \\
+                        & \text{Using the power law:} \quad &
+                            m \log_{b} a & = \log_{b} x \\
+                        & \text{Writing } m \text{ as } \log_{a} x \text{:} \quad &
+                            \log_{a} x \times \log_{b} a & = \log_{b} x \\
+                        & \text{This can be written as:} \quad &
+                            \log_{a} x & = \frac{\log_{b} x}{\log_{b} a}
+                    \end{alignat*} \)
+                </p>
+                <!-- bad text alignment for multi-line equations -->
+                <p>\( \log_{a} x = \frac{\log_{b} x}{\log_{b} a} \)</p>
+                <p>Using this rule, notice in particular that \( \log_{a} b = \frac{\log_{b} b}{\log_{b} a} \), but \( \log_{b} b = 1 \), so: </p>
+                <p>\( \log_{a} b = \frac{1}{\log_{b} a} \)</p>
+
+            <a name="c4"><h4>Chapter 4 The binomial expansion</h4></a>
+                <a name="s4_1"><h5>4.1 Pascal's triangle</h5></a>
+                <p>TODO</p>
+
+                <a name="s4_2"><h5>4.2 Factorial notation</h5></a>
+                <p>You can use combinations and factorial notation to help you expand binomial expressions. For larger indices, it is quicker than using Pascal's triangle.</p>
+                <p>Using factorial notation \( 3 \times 2 \times 1 = 3! \)</p>
+                <p>You say '\( n \) factorial'. By definition, \( 0! = 1 \).</p>
+                <ul>
+                    <li><p>You can use factorial notation and your calculator to find entries in Pascal's triangle quickly.</p></li>
+                    <ul>
+                        <li><p>The number of ways of choosing \( r \) items from a group of \( n \) items is written as \( {}^{n}C_{r} \) or \( {n \choose r} \): \( {}^{n}C_{r} = {n \choose r} = \frac{n!}{r! (n - r)!} \)</p></li>
+                    </ul>
+                </ul>
+
+                <a name="s4_3"><h5>4.3 The binomial expansion</h5></a>
+                <p>A binomial expression has two terms. The binomial expansion allows you to expand powers of binomial expressions.</p>
+                <ul>
+                    <li><p>The binomial expansion is: \( (a + b)^{n} = a^{n} + {n \choose 1} a^{n - 1} b + {n \choose 2} a^{n - 2} b^{2} + ... + {n \choose r} a^{n - r} b^{r} + ... + b^{n} \)\( \qquad (n \in \mathbb{N}) \) where \( {n \choose r} = {}^{n}C_{r} = \frac{n!}{r! (n - r)!} \)</p></li>
+                </ul>
+
+                <a name="s4_4"><h5>4.4 Solving binomial problems</h5></a>
+                <p>You can use the general term of the binomial expansion to find individual coefficients in a binomial expansion.</p>
+                <ul>
+                    <li><p>In the expansion of \( (a + b)^{n} \) the general term is given by \( {n \choose r} a^{n - r} b^{r} \).</p></li>
+                </ul>
+
+                <a name="s4_5"><h5>4.5 Binomial estimation</h5></a>
+                <p>In engineering and science, it is often useful to find simple approximations for complicated functions. If the value of \( x \) is less than \( 1 \), then \( x^{n} \) gets smaller as \( n \) gets larger. If \( x \) is small you can sometimes ignore large powers of \( x \) to approximate a function or estimate a value.</p>
+
+            <a name="c5"><h4>Chapter 5 Sequences and series</h4></a>
+                <a name="s5_1"><h5>5.1 Arithmetic sequences</h5></a>
+                <ul>
+                    <li><p>In an arithmetic sequence, the difference between consecutive terms is constant.</p></li>
+                    <li><p>The formula for the \( n \)th term of an arithmetic sequence is: \( u_{n} = a + (n - 1) d \) where \( a \) is the first term and \( d \) is the common difference.</p></li>
+                </ul>
+
+                <a name="s5_2"><h5>5.2 Arithmetic series</h5></a>
+                <ul>
+                    <li><p>An arithmetic series is the sum of the terms of an arithmetic sequence.</p></li>
+                    <li><p>The sum of the first \( n \) terms of an arithmetic series is given by the formula \( S_{n} = \frac{n}{2} (2 a + (n - 1) d) \) where \( a \) is the first term and \( d \) is the common difference. You can also write this formula as \( S_{n} = \frac{n}{2} (a + l) \) where \( l \) is the last term.</p></li>
+                </ul>
+
+                <a name="s5_3"><h5>5.3 Geometric sequences</h5></a>
+                <ul>
+                    <li><p>A geometric sequence has a common ratio between consecutive terms.</p></li>
+                    <li><p>The formula for the \( n \)th term of a geometric sequence is: \( u_{n} = a r^{n - 1} \) where \( a \) is the first term and \( r \) is the common ratio.</p></li>
+                </ul>
+
+                <a name="s5_4"><h5>5.4 Geometric series</h5></a>
+                <p>A geometric series is the sum of the terms of a geometric sequence.</p>
+                <ul>
+                    <li><p>The sum of the first \( n \) terms of a geometric series is given by the formula \( S_{n} = \frac{a (1 - r^{n})}{1 - r} \), \( r \neq 1 \) where \( a \) is the first term and \( r \) is the common ratio.</p></li>
+                </ul>
+
+                <a name="s5_5"><h5>5.5 Sum to infinity</h5></a>
+                <p>You can work out the sum of the first \( n \) terms of a geometric series. As \( n \) tends to infinity, the sum of the series is called the sum to infinity.</p>
+                <p>Consider the sum of the first \( n \) terms of the geometric series \( 2 + 4 + 8 + 16 + ... \)</p>
+                <p>The terms of this series are getting larger, so as \( n \) tends to infinity, \( S_{n} \) also tends to infinity. This is called a divergent series.</p>
+                <p>Now consider the sum of the first \( n \) terms of the geometric series \( 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + ... \)</p>
+                <p>The terms of this series are getting smaller. As \( n \) tends to infinity, \( S_{n} \) gets closer and closer to a finite value, \( S_{\infty} \). This is called a convergent series.</p>
+                <ul>
+                    <li><p>A geometric series is convergent if and only if \( |r| < 1 \), where \( r \) is the common ratio.</p></li>
+                </ul>
+                <p>The sum of the first \( n \) terms of a geometric series is given by \( S_{n} = \frac{a (1 - r^{n})}{1 - r} \). When \( |r| < 1 \), \( \lim_{n \to \infty} (\frac{a (1 - r^{n})}{1 - r}) = \frac{a}{1 - r} \). This is because \( r^{n} \to 0 \) as \( n \to \infty \).</p>
+                <ul>
+                    <li><p>The sum to infinity of a convergent geometric series is given by \( S_{\infty} = \frac{a}{1 - r} \)</p></li>
+                </ul>
+
+                <a name="s5_6"><h5>5.6 Sigma notation</h5></a>
+                <ul>
+                    <li><p>The Greek capital letter 'sigma' is used to signify a sum. You write it as \( \sum \). You write limits on the top and bottom to show which terms you are summing.</p></li>
+                </ul>
+                <p>You can write some results that you already know using sigma notation: </p>
+                <ul>
+                    <li><p>\( \sum_{r = 1}^{n} 1 = n \)</p></li>
+                    <li><p>\( \sum_{r = 1}^{n} r = \frac{n(n + 1)}{2} \)</p></li>
+                </ul>
+
+                <a name="s5_7"><h5>5.7 Recurrence relations</h5></a>
+                <p>If you know the rule to get from one term to the next in a sequence you can write a recurrence relation.</p>
+                <ul>
+                    <li><p>A recurrence relation of the form \( u_{n + 1} = f(u_{n}) \) defines each term of a sequence as a function of the previous term.</p></li>
+                    <li><p>A sequence is increasing if \( u_{n + 1} > u_{n} \) for all \( n \in \mathbb{N} \).</p></li>
+                    <li><p>A sequence is decreasing if \( u_{n + 1} < u_{n} \) for all \( n \in \mathbb{N} \).</p></li>
+                    <li><p>A sequence is periodic if the terms repeat in a cycle. For a periodic sequence there is an integer \( k \) such that \( u_{n + k} = u_{n} \) for all \( n \in \mathbb{N} \). The value \( k \) is called the order of the sequence.</p></li>
+                </ul>
+
+                <a name="s5_8"><h5>5.8 Modelling with series</h5></a>
+                <p>You can model real-life situations with series.</p>
+
+            <a name="c6"><h4>Chapter 6 Trigonometric identities and equations</h4></a>
+                <a name="s6_1"><h5>6.1 Angles in all four quadrants</h5></a>
+                <p>You can use a unit circle with its centre at the origin to help you understand the trigonometric ratios.</p>
+                <ul>
+                    <li>
+                        <p>For a point \( P(x, y) \) on a unit circle such that \( O P \) make an angle \( \theta \) with the positive \( x \)-axis: </p>
+                        <ul>
+                            <li><p>\( \cos \theta = x = x \)-coordinate of \( P \)</p></li>
+                            <li><p>\( \sin \theta = y = y \)-coordinate of \( P \)</p></li>
+                            <li><p>\( \tan \theta = \frac{y}{x} = \) gradient of \( O P \)</p></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>You can use these definitions to find the values of sine, cosine and tangent for any angle \( \theta \). You always measure positive angles \( \theta \) anticlockwise from the positive \( x \)-axis.</p>
+                <p>The \( x \)-\( y \) plane is divided into quadrants: </p>
+                <p>Angles may lie outside the range \( 0 \)-\( 360^{\circ} \), but they will always lie in one of the four quadrants. For example, an angle of \( 600^{\circ} \) would be equivalent to \( 600^{\circ} - 360^{\circ} = 240^{\circ} \), so it would lie in the thrid quadrant.</p>
+                <ul>
+                    <li><p>You can use the quadrants to determine whether each of the trigonometric ratios is positive or negative.</p></li>
+                </ul>
+                <p>For an angle \( \theta \) in the first quadrant, \( \sin \theta \), \( \cos \theta \) and \( \tan \theta \) are all positive.</p>
+                <p>For an angle \( \theta \) in the second quadrant, only \( \sin \theta \) is positive.</p>
+                <p>For an angle \( \theta \) in the thrid quadrant, only \( \tan \theta \) is positive.</p>
+                <p>For an angle \( \theta \) in the fourth quadrant, only \( \cos \theta \) is positive.</p>
+
+                <a name="s6_2"><h5>6.2 Exact values of trigonometrical ratios</h5></a>
+                <p>TODO</p>
+
+                <a name="s6_3"><h5>6.3 Trigonometric identities</h5></a>
+                <p>You can use the definitions of \( \sin \), \( \cos \) and \( \tan \), together with Pythagoras' theorem, to find two useful identities.</p>
+                <p>The unit circle has equation \( x^{2} + y^{2} = 1 \).</p>
+                <p>Since \( \cos \theta = x \) and \( \sin \theta = y \), it follows that \( \cos^{2} \theta + \sin^{2} \theta = 1 \).</p>
+                <ul>
+                    <li><p>For all values of \( \theta \), \( \sin^{2} \theta + \cos^{2} \theta \equiv 1 \)</p></li>
+                </ul>
+                <p>Since \( \tan \theta = \frac{y}{x} \) it follows that \( \tan \theta = \frac{\sin \theta}{\cos \theta} \)</p>
+                <ul>
+                    <li><p>For all values of \( \theta \) such that \( \cos \theta \neq 0 \), \( \tan \theta \equiv \frac{\sin \theta}{\cos \theta} \)</p></li>
+                </ul>
+                <p>You can use these two identities to simplify trigonometrical expressions and complete proofs.</p>
+
+                <a name="s6_4"><h5>6.4 Solve simple trigonometric equations</h5></a>
+                <ul>
+                    <li><p>Solutions to \( \sin \theta = k \) and \( \cos \theta = k \) only exist when \( -1 \leq k \leq 1 \).</p></li>
+                    <li><p>Solutions to \( \tan \theta = p \) exist for all values of \( p \).</p></li>
+                </ul>
+
+                <a name="s6_5"><h5>6.5 Harder trigonometric equations</h5></a>
+                <p>TODO</p>
+
+                <a name="s6_6"><h5>6.6 Equations and identities</h5></a>
+                <p>TODO</p>
+
+            <a name="c7"><h4>Chapter 7 Differentiation</h4></a>
+                <a name="s7_1"><h5>7.1 Increasing and decreasing functions</h5></a>
+                <p>You can use the derivative to determine whether a function is increasing or decreasing on a given interval.</p>
+                <ul>
+                    <li><p>The function \( f(x) \) is increasing on the interval \( [a, b] \) if \( f'(x) \geq 0 \) for all values of \( x \) such that \( a < x < b \).</p></li>
+                    <li><p>The function \( f(x) \) is decreasing on the interval \( [a, b] \) if \( f'(x) \leq 0 \) for all values of \( x \) such that \( a < x < b \).</p></li>
+                </ul>
+
+                <a name="s7_2"><h5>7.2 Stationary points</h5></a>
+                <p>A stationary point on a curve is any point where the curve has gradient zero. You can determine whether a stationary point is a local maximum, a local minimum or a point of inflection by looking at the gradient of the curve on either side.</p>
+                <p>In some cases you can use the second derivative, \( f''(x) \), to determine the nature of a stationary point.</p>
+                <ul>
+                    <li><p>If a function \( f(x) \) has a stationary point when \( x = a \), then: </p></li>
+                    <ul>
+                        <li><p>if \( f''(a) > 0 \), the point is a local minimum</p></li>
+                        <li><p>if \( f''(a) < 0 \), the point is a local maximum</p></li>
+                    </ul>
+                    <p>If \( f''(a) = 0 \), the point could be a local minimum, a local maximum or a point of inflection. You will need to look at points on either side to determine its nature.</p>
+                </ul>
+
+                <a name="s7_3"><h5>7.3 Sketching gradient functions</h5></a>
+                <p>TODO</p>
+
+                <a name="s7_4"><h5>7.4 Modelling with differentiation</h5></a>
+                <p>You can think of \( \frac{dy}{dx} \) as \( \frac{\text{small change in } y}{\text{small change in } x} \). It represents the rate of change of \( y \) with respect to \( x \).</p>
+                <p>If you replace \( y \) and \( x \) with variables that represent real-life quantities, you can use the derivative to model lots of real-life situations involving rates of change.</p>
+
+            <a name="c8"><h4>Chapter 8 Integration</h4></a>
+                <a name="s8_1"><h5>8.1 Definite integrals</h5></a>
+                <p>You can calculate an integral between two limits. This is called a definite integral. A definite integral usually produces a value whereas an indefinite integral always produces a function.</p>
+                <ul>
+                    <li><p>If \( f'(x) \) is the derivative of \( f(x) \) for all values of \( x \) in the integral \( [a, b] \), then the definite integral is defined as \( \int_{a}^{b} f'(x)\ dx = [f(x)]_{a}^{b} = f(b) - f(a) \).</p></li>
+                </ul>
+
+                <a name="s8_2"><h5>8.2 Areas under curves</h5></a>
+                <ul>
+                    <li><p>The area between a positive curve, the \( x \)-axis and the lines \( x = a \) and \( x = b \) is given by \( \text{Area} = \int_{a}^{b} y\ dx \) where \( y = f(x) \) is the equation of the curve.</p></li>
+                </ul>
+
+                <a name="s8_3"><h5>8.3 Areas under the \( \boldsymbol{x} \)-axis</h5></a>
+                <ul>
+                    <li><p>When the area bounded by a curve and the \( x \)-axis is below the \( x \)-axis, \( \int y\ dx \) gives a negative answer.</p></li>
+                </ul>
+
+                <a name="s8_4"><h5>8.4 Areas between curves and lines</h5></a>
+                <p>TODO</p>
+
+                <a name="s8_5"><h5>8.5 Areas between two curves</h5></a>
+                <ul>
+                    <li><p>The area bounded by two curves can be found using integration: </p></li>
+                </ul>
+                <p>\( \text{Area of } R = \int_{a}^{b} |f(x) - g(x)|\ dx = \int_{a}^{b} f(x)\ dx - g(x)\ dx \)</p>
+                <ul>
+                    <li><p>You will need to find the limits yourself if you are required to find the area bounded by two curves.</p></li>
+                </ul>
+
+                <a name="s8_6"><h5>8.6 The trapezium rule</h5></a>
+                <p>If you cannot integrate a function algebraically, you can use a numerical method to approximate the area beneath a curve.</p>
+                <p>Consider the curve \( y = f(x) \): </p>
+                <p>To approximate the area given by \( \int_{a}^{b} y\ dx \), you can divide the area up into \( n \) equal strips. Each strip will be of width \( h \), where \( h = \frac{b - a}{n} \)</p>
+                <p>Next you calculate the value of \( y \) for each value of \( x \) that forms a boundary of one of the strips. So you find \( y \) for \( x = a \), \( x = a + h \), \( x = a + 2 h \), \( x = a + 3 h \) and so on up to \( x = b \).</p>
+                <p>You can label these values \( y_{0}, y_{1}, y_{2}, y_{3}, ..., y_{n} \).</p>
+                <p>Finally you join adjacent points to form \( n \) trapeziums and approximate the original area by the sum of the areas of these \( n \) trapeziums.</p>
+                <p>That the area of a trapezium like this: </p>
+                <p>is given by \( \frac{1}{2} (y_{0} + y_{1}) h \). The required area under the curve is therefore given by: \( \int_{a}^{b} y\ dx \approx \frac{1}{2} h ((y_{0} + y_{1}) + \frac{1}{2} h (y_{1} + y_{2}) + ... + \frac{1}{2} h (y_{n - 1} + y_{n}) \)</p>
+                <p>Factorising gives: \( \int_{a}^{b} y\ dx \approx \frac{1}{2} h (y_{0} + 2 (y_{1} + y_{2} + ... + y_{n - 1}) + y_{n}) \)</p>
+                <ul>
+                    <li><p>The trapezium rule: \( \int_{a}^{b} y\ dx \approx \frac{1}{2} h (y_{0} + 2 (y_{1} + y_{2} + ... + y_{n - 1}) + y_{n}) \) where \( h = \frac{b - a}{n} \) and \( y_{i} = f(a + i h) \).</p></li>
+                </ul>
+        </div> <!-- end of content -->
+
+        <div id="outline-placeholder" class="invisible-xs col-sm-3 col-md-3 col-lg-3 left">
+        <div id="outline" class="cc">
+            <ul>
+                <li>
+                    <a href="#c1"><h6>1 Algebraic methods</h6></a>
+                    <ul>
+                        <li><a href="#s1_1"><h6>1.1 Algebraic fractions</h6></a></li>
+                        <li><a href="#s1_2"><h6>1.2 Dividing polynomials</h6></a></li>
+                        <li><a href="#s1_3"><h6>1.3 The factor theorem</h6></a></li>
+                        <li><a href="#s1_4"><h6>1.4 The remainder theorem</h6></a></li>
+                        <li><a href="#s1_5"><h6>1.5 Mathematical proof</h6></a></li>
+                        <li><a href="#s1_6"><h6>1.6 Methods of proof</h6></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#c2"><h6>2 Coordinate geometry in the \( (x, y) \) plane</h6></a>
+                    <ul>
+                        <li><a href="#s2_1"><h6>2.1 Midpoints and perpendicular bisectors</h6></a></li>
+                        <li><a href="#s2_2"><h6>2.2 Equation of a circle</h6></a></li>
+                        <li><a href="#s2_3"><h6>2.3 Intersections of straight lines and circles</h6></a></li>
+                        <li><a href="#s2_4"><h6>2.4 Use tangent and chord properties</h6></a></li>
+                        <li><a href="#s2_5"><h6>2.5 Circles and triangles</h6></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#c3"><h6>3 Exponentials and logarithms</h6></a>
+                    <ul>
+                        <li><a href="#s3_1"><h6>3.1 Exponential functions</h6></a></li>
+                        <li><a href="#s3_2"><h6>3.2 Logarithms</h6></a></li>
+                        <li><a href="#s3_3"><h6>3.3 Laws of Logarithms</h6></a></li>
+                        <li><a href="#s3_4"><h6>3.4 Solving equations using logarithms</h6></a></li>
+                        <li><a href="#s3_5"><h6>3.5 Changing the base of a logarithm</h6></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#c4"><h6>4 The binomial expansion</h6></a>
+                    <ul>
+                        <li><a href="#s4_1"><h6>4.1 Pascal's triangle</h6></a></li>
+                        <li><a href="#s4_2"><h6>4.2 Factorial notation</h6></a></li>
+                        <li><a href="#s4_3"><h6>4.3 The binomial expansion</h6></a></li>
+                        <li><a href="#s4_4"><h6>4.4 Solving binomial problems</h6></a></li>
+                        <li><a href="#s4_5"><h6>4.5 Binomial estimation</h6></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#c5"><h6>5 Sequences and series</h6></a>
+                    <ul>
+                        <li><a href="#s5_1"><h6>5.1 Arithmetic sequences</h6></a></li>
+                        <li><a href="#s5_2"><h6>5.2 Arithmetic series</h6></a></li>
+                        <li><a href="#s5_3"><h6>5.3 Geometric sequences</h6></a></li>
+                        <li><a href="#s5_4"><h6>5.4 Geometric series</h6></a></li>
+                        <li><a href="#s5_5"><h6>5.5 Sum to infinity</h6></a></li>
+                        <li><a href="#s5_6"><h6>5.6 Sigma notation</h6></a></li>
+                        <li><a href="#s5_7"><h6>5.7 Recurrence relations</h6></a></li>
+                        <li><a href="#s5_8"><h6>5.8 Modelling with series</h6></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#c6"><h6>6 Trigonometric identities and equations</h6></a>
+                    <ul>
+                        <li><a href="#s6_1"><h6>6.1 Angles in all four quadrants</h6></a></li>
+                        <li><a href="#s6_2"><h6>6.2 Exact values of trigonometric ratios</h6></a></li>
+                        <li><a href="#s6_3"><h6>6.3 Trigonometric identities</h6></a></li>
+                        <li><a href="#s6_4"><h6>6.4 Solve simple trigonometric equations</h6></a></li>
+                        <li><a href="#s6_5"><h6>6.5 Harder trigonometric equations</h6></a></li>
+                        <li><a href="#s6_6"><h6>6.6 Equations and identities</h6></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#c7"><h6>7 Differentiation</h6></a>
+                    <ul>
+                        <li><a href="#s7_1"><h6>7.1 Increasing and decreasing functions</h6></a></li>
+                        <li><a href="#s7_2"><h6>7.2 Stationary points</h6></a></li>
+                        <li><a href="#s7_3"><h6>7.3 Sketching gradient functions</h6></a></li>
+                        <li><a href="#s7_4"><h6>7.4 Modelling with differentiation</h6></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#c8"><h6>8 Integration</h6></a>
+                    <ul>
+                        <li><a href="#s8_1"><h6>8.1 Definite integrals</h6></a></li>
+                        <li><a href="#s8_2"><h6>8.2 Areas under curves</h6></a></li>
+                        <li><a href="#s8_3"><h6>8.3 Areas under the \( x \)-axis</h6></a></li>
+                        <li><a href="#s8_4"><h6>8.4 Areas between curves and lines</h6></a></li>
+                        <li><a href="#s8_5"><h6>8.5 Areas between two curves</h6></a></li>
+                        <li><a href="#s8_6"><h6>8.6 The trapezium rule</h6></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> <!-- end of outline -->
+        </div>
+    </div> <!-- end of middle -->
+
+    <div id="bottom" class="container ca">
+        <div id="copyright">
+            <p><b>&copy; 2022 Maths Coding Archive</b></p>
+        </div>
+    </div> <!-- end of bottom -->
+
+    <script src="../js/prototype.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* middle styles */
+#sidebar-placeholder {
+    height: 100px;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 23.75%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#content {
+    padding: 15px;
+}
+
+#outline {
+    position: fixed;
+    width: 23.75%;
+    padding: 20px;
+    overflow: auto;
+}
+
+.passage {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#outline ul {
+    list-style-type: none;
+}
+
+#outline ul ul {
+    margin: 0 0 10px 10px;
+    padding: 0 0 0 10px;
+    border-left: 2px solid #000;
+}
